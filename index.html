@@ -8,7 +8,7 @@
 <!-- Mirrored from themesflat.co/html/ecomus/home-05.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:01:14 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Ecomus - Ultimate HTML</title>
+    <title>Itunumo@40</title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,6 +26,22 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const featuresSection = document.getElementById('features');
+            const header = document.getElementById('header');
+            
+            const featuresSectionTop = featuresSection.offsetTop;
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition >= featuresSectionTop) {
+                header.style.backgroundColor = '#012BAE';
+            } else {
+                header.style.backgroundColor = '#F5CE84';
+            }
+        });
+        </script>
 
 </head>
 
@@ -45,7 +61,7 @@
        
         <!-- /Announcement Bar -->
         <!-- Header -->
-        <header id="header" class="header-default header-absolute header-white bg_light-grey-2">
+        <header id="header" class="header-default header-absolute header-white" style="background-color: #F5CE84;">
             <div class="px_15 lg-px_40">
                 <div class="row wrapper-header align-items-center">
                     <div class="col-md-4 col-3 tf-lg-hidden">
@@ -742,7 +758,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tf-timeline-item z-2 position-relative">
+                    <div class="tf-timeline-item z-2 position-relative" id="features">
                         <div class="tf-timeline-inner d-flex align-items-center justify-content-between">
                             <span class="tf-timeline-time">04</span>
                             <div class="tf-timeline-content">
